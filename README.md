@@ -27,7 +27,7 @@ You need the connection uuid to the server (check your connection uuid with "nmc
 ```sh
 $ serverfault --conn <uuid> --server <ip>
 ```
-Options --conn <uuid> and --server <ip> in commandline can be omitted by compiling the USER CONFIGURATION at the top of this script (${0})
+Options --conn <uuid> and --server <ip> in commandline can be omitted by compiling the USER CONFIGURATION at the top of this script.
 
 This tool is designed to start at boot time with cron and user root (in order to unmount unreachable remote mounts)
 To configure crontab with user root, on a shell give:
@@ -40,8 +40,8 @@ PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 @reboot serverfault --conn <uuid> --server <ip> > /dev/null 2>&1 &
 ```
 
-If you dont mind checking unreachable remote mounts, you could use cron with by user.
-To configure crontab with normal user, on a shell give:
+If you dont mind checking unreachable remote mounts, you could use cron with unprivileged user.
+To configure crontab with unprivileged user, on a shell give:
 ```sh
 $ crontab -e
 ```
