@@ -465,7 +465,7 @@ echo "
 # License:    GNU General Public License v3.0, https://opensource.org/licenses/GPL-3.0
 
 ### DESCRIPTION
-This bash script check if a given server on LAN is online and sends a visual and acoustic warning to client. If any remote NFS/SSHFS remote mounts are unreachable they'll be unmounted (if root permissions are granted).
+This bash script check if a given server on LAN is offline and sends a visual and acoustic warning to client. If any remote NFS/SSHFS remote mounts are unreachable they'll be unmounted (if root permissions are granted).
 
 ### USAGE
 
