@@ -11,12 +11,14 @@ This bash script check if a given server on LAN is online and sends a visual and
 ### INSTALL
 ```sh
 curl -o /tmp/serverfault.sh 'https://raw.githubusercontent.com/KeyofBlueS/serverfault/master/serverfault.sh'
+curl -o /tmp/serverfaultalarm 'https://raw.githubusercontent.com/KeyofBlueS/serverfault/master/serverfaultalarm'
 sudo mkdir -p /opt/serverfault/
 sudo mv /tmp/serverfault.sh /opt/serverfault/
 sudo chown root:root /opt/serverfault/serverfault.sh
 sudo chmod 755 /opt/serverfault/serverfault.sh
 sudo chmod +x /opt/serverfault/serverfault.sh
 sudo ln -s /opt/serverfault/serverfault.sh /usr/local/bin/serverfault
+mv /tmp/serverfaultalarm $HOME/.serverfaultalarm
 ```
 
 ### USAGE
