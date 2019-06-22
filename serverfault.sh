@@ -486,8 +486,8 @@ PATH=/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin
 @reboot serverfault --conn <uuid> --server <ip> > /dev/null 2>&1 &
 
 
-If you dont mind checking unreachable remote mounts, you could use cron with by user.
-To configure crontab with normal user, on a shell give:
+If you dont mind checking unreachable remote mounts, you could use cron with unprivileged user.
+To configure crontab with unprivileged user, on a shell give:
 
 $ crontab -e
 
